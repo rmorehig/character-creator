@@ -1,9 +1,10 @@
 html,
-body,
-#root {
+body {
   height: 100%;
 }
-
+#root {
+  position: relative;
+}
 body {
   background-color: hsl(180deg, 25%, 92%);
   margin: 0;
@@ -12,7 +13,7 @@ body {
 *,
 *:before,
 *:after {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -29,4 +30,7 @@ body {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+.appContent {
+  isolation: isolate;
 }
