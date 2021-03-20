@@ -14,7 +14,7 @@ import {
   clothesColorOptions,
 } from "./CharacterEditor.helpers";
 import styles from "./CharacterEditor.module.css";
-
+import BackgroundBar from "../BackgroundBar";
 function App() {
   const [body, setBody] = React.useState(0);
   const [head, setHead] = React.useState(0);
@@ -25,6 +25,7 @@ function App() {
 
   return (
     <main className={styles.characterEditor}>
+      <BackgroundBar />
       <MaxWidthWrapper className={styles.maxWidthWrapper}>
         <header className={styles.header}>
           <h1 className={styles.title}>Create your Character</h1>
